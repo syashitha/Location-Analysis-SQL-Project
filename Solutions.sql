@@ -47,6 +47,7 @@ FROM
 GROUP BY 1
 ORDER BY 2 DESC;
 
+
 --               Average Sales Amount per City
 #4 What is the average sales amount per customer in each city?
 
@@ -160,7 +161,7 @@ ON cr.city_name = ct.city_name
 ORDER BY 5 DESC;
 
 
--- Monthly Sales Growth
+-- 					Monthly Sales Growth
 #9 Sales growth rate: Calculate the percentage growth (or decline) in sales over different time periods (monthly).
 
 WITH
@@ -202,7 +203,7 @@ SELECT
 FROM growth_ratio;
 
 
--- Market Potential Analysis
+-- 					Market Potential Analysis
 #10 Identify top 3 city based on highest sales, return city name, total sale, total rent, total customers, estimated coffee consumer
 
 WITH city_table
